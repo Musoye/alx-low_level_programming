@@ -8,13 +8,13 @@ int main(void)
 {
 	int let = 48;
 
-	while (let >= 57)
+	while (let <= 57)
 	{
 		putchar(let);
 		let++;
 	}
 
-	char alph = 'a'
+	char alph = 'a';
 
 	while (alph <= 'f')
 	{
