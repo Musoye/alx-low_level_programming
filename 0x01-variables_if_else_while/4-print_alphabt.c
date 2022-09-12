@@ -12,9 +12,9 @@ int main(void)
 	while (let <= 'z')
 	{
 		if (let == 'q' || let == 'e')
-			putchar(c);
+			putchar(let);
 
-		c++;
+			let++;
 	}
 	putchar('\n');
 	return (0);
