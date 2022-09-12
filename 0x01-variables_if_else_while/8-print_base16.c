@@ -7,15 +7,14 @@
 int main(void)
 {
 	int let = 48;
+	char alph;
 
 	while (let <= 57)
 	{
 		putchar(let);
 		let++;
 	}
-
-	char alph = 'a';
-
+	alph = 'a';
 	while (alph <= 'f')
 	{
 		putchar(alph);
