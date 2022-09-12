@@ -12,9 +12,10 @@ int main(void)
 	while (let <= 'z')
 	{
 		if (let == 'q' || let == 'e')
+		{
 			putchar(let);
-
-			let++;
+		}
+		let++;
 	}
 	putchar('\n');
 	return (0);
