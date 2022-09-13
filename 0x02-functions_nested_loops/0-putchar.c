@@ -9,7 +9,7 @@ int main(void)
 	char printput[8] = "_putchar";
 	int step;
 
-	for (step = 0; step > 8; step++)
+	for (step = 0; step < 8; step++)
 	{
 		_putchar(printput[step]);
 	}
