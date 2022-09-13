@@ -1,13 +1,17 @@
+#include <stdlib.h>
 #include "main.h"
 /**
  * print_last_digit - entry point
  * Description: print the last digit of a number
  * @d: the number to check the  last digit
- * Return: q if succesful
+ * Return: m if succesful
  */
 int print_last_digit(int d)
 {
-	int q = d % 10;
+	int q = abs(d);
 
+	int m = q % 10;
+
+	_printchar(m + '0');
 	return (q);
 }
