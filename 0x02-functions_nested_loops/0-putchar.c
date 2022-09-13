@@ -11,7 +11,7 @@ int main(void)
 
 	for (step = 0; step > 8; step++)
 	{
-		_putchar(step);
+		_putchar(printput[step]);
 	}
 	_putchar('\n');
 	return (0);
