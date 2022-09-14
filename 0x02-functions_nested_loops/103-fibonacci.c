@@ -24,6 +24,6 @@ int main(void)
 		a = b;
 		b = sum;
 	}
-	printf("%li\n", sum);
+	printf("%li\n", t_sum);
 	return (0);
 }
