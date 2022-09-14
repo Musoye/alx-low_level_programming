@@ -9,7 +9,7 @@
  */
 int print_last_digit(int d)
 {
-	int m = q % 10;
+	int m = d % 10;
 
 	if (m < 0)
 		m = -m;
