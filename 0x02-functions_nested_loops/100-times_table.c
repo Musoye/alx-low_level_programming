@@ -40,7 +40,7 @@ void print_times_table(int n)
 				{
 					putchar(',');
 					putchar(' ');
-					putchar(product / 100 + '0');
+					putchar(c / 100 + '0');
 					putchar((c / 10) % 10 + '0');
 					putchar(c % 10 + '0');
 				}
