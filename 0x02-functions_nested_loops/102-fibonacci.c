@@ -5,21 +5,24 @@
  */
 int main(void)
 {
-	unsigned int a = 1;
-	unsigned int b = 2;
+	long int a = 1;
+	long int b = 2;
 	int count = 0;
-	int sum;
+	long int sum;
+
+	printf("%li, ", a);
+	printf("%li, ", b);
 
 	while (count <= 49)
 	{
 		if (count == 49)
 		{
 			sum = a + b;
-			printf("%u\n", sum);
+			printf("%li\n", sum);
 			break;
 		}
 		sum = a + b;
-		printf("%u, ", sum);
+		printf("%li, ", sum);
 		a = b;
 		b = sum;
 		count++;
