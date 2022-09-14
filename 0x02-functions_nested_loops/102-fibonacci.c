@@ -13,9 +13,9 @@ int main(void)
 	printf("%li, ", a);
 	printf("%li, ", b);
 
-	while (count <= 49)
+	while (count <= 47)
 	{
-		if (count == 49)
+		if (count == 47)
 		{
 			sum = a + b;
 			printf("%li\n", sum);
