@@ -10,8 +10,8 @@ int main(void)
 {
 	long int t_sum = 0;
 	long int sum = 0;
-	long int a = 1;
-	long int b = 2;
+	long int a = 0;
+	long int b = 1;
 
 	while (sum < 4000000)
 	{
