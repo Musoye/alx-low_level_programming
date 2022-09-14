@@ -1,8 +1,8 @@
 #include "main.h"
 /**
-* jack_bauer - entry point
-* Return: null
-*/
+ * jack_bauer - entry point
+ * Return: null
+ */
 void jack_bauer(void)
 {
 	int h1, h2, m1, m2;
