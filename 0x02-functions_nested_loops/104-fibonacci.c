@@ -5,17 +5,17 @@
  */
 int main(void)
 {
-	long int sum;
-	long int a = 1;
-	long int b = 2;
+	unsigned long int sum;
+	unsigned long int a = 1;
+	unsigned long int b = 2;
 	int count = 0;
 
 	printf("%li, ", a);
 	printf("%li, ", b);
 
-	while (count <= 97)
+	while (count <= 95)
 	{
-		if (count == 97)
+		if (count == 95)
 		{
 			printf("%li\n", sum);
 			break;
