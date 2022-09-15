@@ -21,14 +21,14 @@ void print_triangle(int size)
 		b = 0;
 		while (b < a)
 		{
-			_putchar("#");
+			_putchar('#');
 			b++;
 		}
-		_putchar("\n");
+		_putchar('\n');
 		a++;
 	}
-	if (size <= 1)
+	if (size <= 0)
 	{
-		_putchar("\n");
+		_putchar('\n');
 	}
 }
