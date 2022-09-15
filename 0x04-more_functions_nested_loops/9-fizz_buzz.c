@@ -29,13 +29,13 @@ int main(void)
 		}
 		else if (i % 3 == 0)
 		{
-			printf("Buzz ");
+			printf("Fizz ");
 		}
 		else
 		{
 			printf("%d ", i);
 		}
 	}
-	printf('\n');
+	printf("\n");
 	return (0);
 }
