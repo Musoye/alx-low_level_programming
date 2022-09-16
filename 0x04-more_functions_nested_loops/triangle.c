@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
  * print_triangle - entry point to print a right angled triangle
@@ -9,22 +8,27 @@
 
 void print_triangle(int size)
 {
-	int a, b;
+	int a = 1, b;
 
-	for (a = 0; a < size; a++)
+	while (a <= size && size > 0)
 	{
-		for (b = 1; b < (size - 1); b++)
+		b = 0;
+		while (b < size - 1)
 		{
 			_putchar(' ');
+			b++;
 		}
-		for (b--; b < size; b++)
+		b = 0;
+		while (b < a)
 		{
 			_putchar('#');
+			b++;
 		}
-		if (a < (size - 1))
-		{
-			_putchar('\n');
-		}
+		_putchar('\n');
+		a++;
 	}
-	_putchar('\n');
+	if (size <= 0)
+	{
+		_putchar('\n');
+	}
 }
