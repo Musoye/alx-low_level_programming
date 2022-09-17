@@ -1,23 +1,34 @@
 #include "main.h"
-#include <stdio.h>
 /**
  * times_table -entry point
  * return: void
  */
 void times_table(void)
 {
-	int a, b;
+	int a, b, c;
 
 	for (a = 0; a < 10; a++)
 	{
 		for (b = 0; b < 10; b++)
 		{
-			printf("%d", a * b);
-			if (b < 9)
+			c = a * b;
+			if (j == 0)
+				_putchar(c + '0');
+			else if (c < 10 && b != 0)
 			{
-				printf(",  ");
+				_putchar(',');
+				_putchar(' ');
+				_putchar(' ');
+				_putchar(c + '0');
+			}
+			else if (c >= 10)
+			{
+				_putchar(',');
+				_putchar(' ');
+				_putchar((c / 10) + '0');
+				_putchar((c % 10) + '0');
 			}
 		}
-		printf("\n");
+		_putchar('\n');
 	}
 }
