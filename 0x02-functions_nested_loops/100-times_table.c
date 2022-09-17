@@ -17,9 +17,7 @@ void print_times_table(int n)
 			{
 				c = a * b;
 				if (b == 0)
-				{
 					putchar(c + '0');
-				}
 				else if (c < 10 && b != 0)
 				{
 					putchar(',');
@@ -47,6 +45,5 @@ void print_times_table(int n)
 			}
 			putchar('\n');
 		}
-
 	}
 }
