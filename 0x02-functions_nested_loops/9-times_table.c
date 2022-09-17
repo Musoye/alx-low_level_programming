@@ -18,6 +18,6 @@ void times_table(void)
 				printf(", ");
 			}
 		}
-		prinf("\n");
+		printf("\n");
 	}
 }
