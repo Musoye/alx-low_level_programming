@@ -1,6 +1,5 @@
-#include <stdlib.h>
-#include <stdio.h>
 #include "main.h"
+
 /**
  * print_last_digit - entry point
  * Description: print the last digit of a number
@@ -11,8 +10,8 @@ int print_last_digit(int d)
 {
 	int m = d % 10;
 
-	if (d < 0)
+	if (m < 0)
 		m = -m;
-	putchar(m + '0');
+	_putchar(m + '0');
 	return (m);
 }
