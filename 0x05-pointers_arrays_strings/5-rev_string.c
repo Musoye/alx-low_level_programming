@@ -10,7 +10,7 @@ void rev_string(char *s)
 	char ephe;
 
 	i = 0;
-	while (str[i])
+	while (s[i])
 	{
 		i++;
 	}
