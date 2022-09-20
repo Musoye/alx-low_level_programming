@@ -12,7 +12,6 @@ void print_rev(char *s)
 	while (s[a])
 	{
 		a++;
-		s++
 	}
 
 	while (a--)
