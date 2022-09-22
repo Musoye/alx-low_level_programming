@@ -9,7 +9,7 @@ char *leet(char *s)
 	char *rep;
 	rep = s;
 
-	while (s != '\0')
+	while (*s != '\0')
 	{
 		if (*s == 'a' || *s == 'A')
 			*s = 4;
