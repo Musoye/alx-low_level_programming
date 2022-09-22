@@ -7,6 +7,7 @@
 char *leet(char *s)
 {
 	char *rep;
+
 	rep = s;
 
 	while (*s != '\0')
@@ -17,9 +18,9 @@ char *leet(char *s)
 			*s = 3;
 		else if (*s == 'o' || *s == 'O')
 			*s = 0;
-		else if (*s = 't' || *s == 'T')
+		else if (*s == 't' || *s == 'T')
 			*s = 7;
-		else if (*s = 'l' || *s == 'L')
+		else if (*s == 'l' || *s == 'L')
 			*s = 1;
 		s++;
 	}
