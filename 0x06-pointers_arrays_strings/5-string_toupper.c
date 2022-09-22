@@ -10,8 +10,8 @@ char *string_toupper(char *s)
 
 	for ( ; s[i] != '\0'; i++)
 	{
-		if (str[i] >= 'a' && str[i] <= 'z')
-			str[i] -= 32;
+		if (s[i] >= 'a' && s[i] <= 'z')
+			s[i] -= 32;
 	}
-	return (str);
+	return (s);
 }
