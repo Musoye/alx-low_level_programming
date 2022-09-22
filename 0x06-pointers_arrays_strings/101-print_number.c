@@ -1,6 +1,4 @@
-#include <stdio.h>
 #include "main.h"
-
 /**
  * print_number - it prints number
  * @n: the integer to print
@@ -17,6 +15,8 @@ void print_number(int n)
 		a = -a;
 	}
 	if ((a / 10) > 0)
+	{
 		print_number(a / 10);
+	}
 	_putchar((a % 10) + '0');
 }
