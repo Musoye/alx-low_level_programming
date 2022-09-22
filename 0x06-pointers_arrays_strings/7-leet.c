@@ -24,6 +24,6 @@ char *leet(char *s)
 			*s = 1;
 		s++;
 	}
-	s = aux;
+	s = rep;
 	return (s);
 }
