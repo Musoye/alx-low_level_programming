@@ -6,24 +6,20 @@
  */
 char *leet(char *s)
 {
-	char *rep;
+	int indx1 = 0, indx2;
 
-	rep = s;
+	char leet[8] = {'O', 'L', '?', 'E', 'A', '?', '?', 'T'};
 
-	while (*s != '\0')
+	while (s[indx1])
 	{
-		if (*s == 'a' || *s == 'A')
-			*s = 4;
-		else if (*s == 'e' || *s == 'E')
-			*s = 3;
-		else if (*s == 'o' || *s == 'O')
-			*s = 0;
-		else if (*s == 't' || *s == 'T')
-			*s = 7;
-		else if (*s == 'l' || *s == 'L')
-			*s = 1;
-		s++;
+		for (indx2 = 0; indx2 <= 7; indx2++)
+		{
+			if (s[indx1] == leet[indx2] || s[indx1] - 32 == leet[indx2])
+			{
+				s[indx1] = indx2 + '0';
+			}
+		}
+		indx1++;
 	}
-	s = rep;
 	return (s);
 }
