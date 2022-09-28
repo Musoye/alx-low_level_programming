@@ -7,9 +7,6 @@
  */
 int _pow_recursion(int x, int y)
 {
-	int m;
-	
-	m = 0;
 	if (y < 0)
 	{
 		return (-1);
