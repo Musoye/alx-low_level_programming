@@ -33,13 +33,14 @@ int main(int argc, char *argv[])
 	return (0);
 }
 /**
- * IsNumber: check the number
+ * IsNumber - check the number
  * @s: the string
  * Return: 0 or 1
  */
 int IsNumber(char *s)
 {
 	int c = 0;
+
 	while (s[c] != '\0')
 	{
 		if (s[c] < '0' || s[c] > '9')
