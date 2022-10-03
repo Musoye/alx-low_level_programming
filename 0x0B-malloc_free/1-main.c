@@ -5,7 +5,8 @@ int main(void)
 {
 	char *s;
 
-	s = _strdup("ALX SE");
+	s = str_concat("Betty ", "Holberton");
+	/**s = _strdup("ALX SE");*/
 	if (s == NULL)
 	{
 		printf("unallocated memory");
