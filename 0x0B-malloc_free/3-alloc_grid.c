@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include "main.h"
 /**
- * alloc_gri - create a 2D array
+ * alloc_grid - create a 2D array
  * @width: the row
  * @height: the column
  * Return:pointer to the string
@@ -12,15 +12,21 @@ int **alloc_grid(int width, int height)
 	int a, b = 0;
 	int **array;
 
-	array = malloc(sizeof(int *) * width);
+	array = malloc(sizeof(int *) * height);
 
 	if (width <= 0 || height <= 0 || array == 0)
 		return (NULL);
-	for (a = 0; a < width; a++)
-		array[b] = malloc(sizeof(int) * height);
-	for(a = 0; a < width; a++)
+	for (a = 0; a < height; a++)
 	{
-		for (b = 0; b < height; b++)
+		array[a] = malloc(sizeof(int) * width);
+		if (array[a] == 0)
+		{
+			while (a--)
+				free(array[a]);
+			free(tab);
+			return (NULL);
+		}
+		for (b = 0; b < width; b++)
 			array[a][b] = 0;
 	}
 	return (array);
