@@ -8,9 +8,8 @@
  * Return: 0 always
  */
 int main(argc, char *argv[])
-{
-	unsigned long int a;
-	unsigned long int b;
+
+	int a, b;
 
 	if (argc != 3)
 	{
