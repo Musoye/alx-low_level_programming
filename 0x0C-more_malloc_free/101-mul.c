@@ -8,19 +8,19 @@
  * Return: 0 always
  */
 int main(int argc, char *argv[])
-
+{
 	int a, b;
 
 	if (argc != 3)
 	{
-		_putchar("Error\n");
+		printf("Error\n");
 		exit(98);
 	}
 	else
 	{
 		a = atoi(argv[1]);
 		b = atoi(argv[2]);
-		printf("%lu\n", a * b);
+		printf("%d\n", a * b);
 	}
 	return (0);
 }
