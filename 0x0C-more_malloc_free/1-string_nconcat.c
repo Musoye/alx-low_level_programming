@@ -1,12 +1,12 @@
 #include "main.h"
 #include <stdlib.h>
-int length(char *s);
+unsigned int length(char *s);
 /**
  * length - length of a string
  * @s: the pointer to the string
  * Return: the length(int)
  */
-int length(char *s)
+unsigned int length(char *s)
 {
 	int size;
 
