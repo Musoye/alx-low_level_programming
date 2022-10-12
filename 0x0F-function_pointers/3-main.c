@@ -1,34 +1,32 @@
-#include <stdio.h>
-#include <stdlib.h>
 #include "3-calc.h"
+#include <stdlib.h>
+#include <stdio.h>
 
 /**
-* main - performs different ops on numbers based on input
-* @argc: number of arguments
-* @argv: array of arguments
-* Return: void
-*/
-
+ * main - ...
+ * @argc: ...
+ * @argv: ...
+ *
+ * Return: ...
+ */
 int main(int argc, char *argv[])
 {
-	int a, b, i, (*n)(int, int);
-	char *s;
-	
-	printf("%s",argv[1]);
-	if (argc > 0)
+	int (*oprt)(int, int);
+
+	if (argc != 4)
 	{
-	a = atoi(argv[1]);
-	b = atoi(argv[3]);
-	s = argv[2];
-	
-	n = (*get_op_func)(s);
-	i = (*n)(a, b);
-
-	
-	printf("%d\n", i);
+		printf("Error\n");
+		exit(98);
 	}
-	
 
+	oprt = get_op_func(argv[2]);
+
+	if (!oprt)
+	{
+		printf("Error\n");
+		exit(99);
+	}
+
+	printf("%d\n", oprt(atoi(argv[1]), atoi(argv[3])));
 	return (0);
-
 }
