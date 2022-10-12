@@ -1,4 +1,4 @@
-#include "main.h"
+#include "function_pointers.h"
 /**
  * array_iterator - the function that takes in different
  * function to work on it
