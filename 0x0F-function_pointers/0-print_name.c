@@ -1,4 +1,3 @@
-#include <stdlib.h>
 #include "main.h"
 /**
  * print_name - function to illustrate different function
