@@ -1,3 +1,4 @@
+#include <stddef.h>
 #include "function_pointers.h"
 /**
  * array_iterator - the function that takes in different
