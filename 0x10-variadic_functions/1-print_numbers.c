@@ -2,7 +2,6 @@
 #include <stddef.h>
 #include <stdio.h>
 #include <stdlib.h>
-#include "variadic_functions.h"
 /**
  * print_numbers- function to print unrevocked number
  * of numbers
@@ -20,7 +19,7 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	va_start(ap, n);
 	for (i = 0; i < n; i++)
 	{
-		if (separator)
+		if (*separator != '\0')
 		{
 			printf("%d%s", va_arg(ap, int), separator);
 		}
@@ -29,5 +28,5 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 			printf("%d", va_arg(ap, int));
 		}
 	}
-	_putchar('\n');
+	putchar('\n');
 }
