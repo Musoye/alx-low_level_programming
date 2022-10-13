@@ -1,6 +1,5 @@
 #include <stdarg.h>
 #include <stdio.h>
-#include <stdlib.h>
 /**
  * print_numbers- function to print unrevocked number
  * of numbers
@@ -13,8 +12,10 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	unsigned int i;
 	va_list ap;
 
-	if (n == 0)
-		exit(98);
+	/**
+	 * if (n == 0)
+	 * exit(98);
+	 */
 	va_start(ap, n);
 	for (i = 0; i < n; i++)
 	{
