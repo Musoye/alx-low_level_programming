@@ -1,5 +1,4 @@
 #include <stdarg.h>
-#include <stddef.h>
 #include <stdio.h>
 #include <stdlib.h>
 /**
@@ -15,18 +14,14 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	va_list ap;
 
 	if (n == 0)
-		exit(0);
+		exit(98);
 	va_start(ap, n);
 	for (i = 0; i < n; i++)
 	{
-		if (*separator != '\0')
-		{
-			printf("%d%s", va_arg(ap, int), separator);
-		}
-		else
-		{
-			printf("%d", va_arg(ap, int));
-		}
+		printf("%d", va_arg(ap, int));
+		if (separator && i != n - 1)
+			printf("%s", separator);
 	}
-	putchar('\n');
+	va_end(ap);
+	printf("\n");
 }
