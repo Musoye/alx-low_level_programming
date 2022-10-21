@@ -1,1 +1,1 @@
-s is a repository for the check of the data structure linked list
+The directory for singlr linked list for algorithm
