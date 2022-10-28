@@ -1,1 +1,2 @@
-This is the directory for bitwise operations and its types.
+This is a directory for the bitwise operatio task
+
