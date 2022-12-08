@@ -23,13 +23,14 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 		if (idx == r)
 		{
 			new->n = n;
-			back = h->prev
-			new->next = h;
+			back = last->prev;
+			new->next = last;
 			new->prev = back;
-			return (*h);
+			back->next = new;
+			return (new);
 		}
 		last = last->next;
 		r++;
 	}
-	return (NULL)
+	return (NULL);
 }
