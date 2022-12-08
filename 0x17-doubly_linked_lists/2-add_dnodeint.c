@@ -1,0 +1,25 @@
+#include "lists.h"
+
+/**
+ * add_dnodeint - add node to beginning of
+ *                linked list
+ * @head: the head of a linked list
+ * @n: the element to add
+ * Return: the new linked list
+ */
+dlistint_t *add_dnodeint(dlistint_t **head, const int n)
+{
+	dlistint_t *new;
+
+	if (*head == NULL)
+	{
+		new->n = n;
+		*head = new;
+		return (new);
+	}
+	new->n = n;
+	(*head)->prev = new;
+	new->next = *head;
+	new->prev = NULL;
+	return (new);
+}
